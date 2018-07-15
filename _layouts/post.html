@@ -27,6 +27,7 @@ share: false
     </div>
 
     <div class="block-right">
+        <h2>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h2>
       <div class="share-buttons">
         {% include share.html %}
       </div>
